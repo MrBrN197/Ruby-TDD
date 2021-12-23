@@ -18,7 +18,8 @@ class Solver
       str << 'fizzbuzz'
     elsif (int % 3 == 0)
       str << 'fizz'
- 
+    elsif (int % 5 == 0)
+      str << 'buzz'
     else
       return
     end
