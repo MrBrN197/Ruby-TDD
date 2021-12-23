@@ -14,7 +14,9 @@ class Solver
 
   def fizzbuzz(int)
     str = ''
-    if (int % 3 == 0)
+    if (int % 5 == 0 && int % 3 == 0)
+      str << 'fizzbuzz'
+    elsif (int % 3 == 0)
       str << 'fizz'
     else
       return
