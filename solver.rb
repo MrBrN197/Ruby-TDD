@@ -18,6 +18,7 @@ class Solver
       str << 'fizzbuzz'
     elsif (int % 3 == 0)
       str << 'fizz'
+ 
     else
       return
     end
