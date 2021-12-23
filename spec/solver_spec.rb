@@ -19,5 +19,10 @@ describe Solver do
       expect(reversed_word).to eql 'olleh'
     end
 
+    it 'test should return fizz, buzz, fizzbuzz or number' do
+      fizzbuzz = @solver.fizzbuzz(15)
+      expect(fizzbuzz).to eql 'fizz'
+    end
+
   end
 end
