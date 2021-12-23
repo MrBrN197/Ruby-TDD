@@ -21,7 +21,7 @@ class Solver
     elsif (int % 5 == 0)
       str << 'buzz'
     else
-      return
+      str << int.to_s
     end
 
   end
