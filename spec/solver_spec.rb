@@ -6,6 +6,12 @@ describe Solver do
   end
 
   context 'test functionality of Solver methods' do
+
+    it 'should return 1 for input 0' do
+      result = @solver.factorial(0)
+      expect(result).to eql 1
+    end
+
     it 'should throw when number argument is < 0' do
       expect { @solver.factorial(-1) }.to raise_error('argument cannot be less than zero', ArgumentError)
     end
