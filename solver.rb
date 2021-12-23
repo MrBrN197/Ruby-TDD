@@ -12,4 +12,12 @@ class Solver
     str.reverse
   end
 
+  def fizzbuzz(int)
+    str = ''
+    if (int % 3 == 0)
+      str << 'fizz'
+    else
+      str << 'buzz'
+    end
+  end
 end
