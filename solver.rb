@@ -17,7 +17,8 @@ class Solver
     if (int % 3 == 0)
       str << 'fizz'
     else
-      str << 'buzz'
+      return
     end
+
   end
 end

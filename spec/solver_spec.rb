@@ -20,9 +20,13 @@ describe Solver do
     end
 
     it 'test should return fizz, buzz, fizzbuzz or number' do
-      fizzbuzz = @solver.fizzbuzz(15)
+      fizzbuzz = @solver.fizzbuzz(12)
       expect(fizzbuzz).to eql 'fizz'
     end
 
+    it 'test should return fizz, buzz, fizzbuzz or number' do
+      fizzbuzz = @solver.fizzbuzz(15)
+      expect(fizzbuzz).to eql 'fizzbuzz'
+    end
   end
 end
