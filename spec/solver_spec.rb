@@ -12,5 +12,12 @@ describe Solver do
       result = @solver.factorial(5)
       expect(result).to eql 120
     end
+
+    it 'test that reverse method reverses a string' do
+      word = 'hello'
+      reversed_word = @solver.reverse(word)
+      expect(reversed_word).to eql 'olleh'
+    end
+
   end
 end

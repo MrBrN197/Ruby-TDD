@@ -7,4 +7,8 @@ class Solver
     end
     sum
   end
+
+  def reverse(str)
+  end
+
 end
