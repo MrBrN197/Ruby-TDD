@@ -1,8 +1,7 @@
-
 class Solver
-  def factorial n
+  def factorial(num)
     sum = 1
-    for i in 1..n do
+    (1..num).each do |i|
       sum *= i
     end
     sum
@@ -14,15 +13,14 @@ class Solver
 
   def fizzbuzz(int)
     str = ''
-    if (int % 5 == 0 && int % 3 == 0)
-      str << 'fizzbuzz'
-    elsif (int % 3 == 0)
-      str << 'fizz'
-    elsif (int % 5 == 0)
-      str << 'buzz'
-    else
-      str << int.to_s
-    end
-
+    str << if (int % 5).zero? && (int % 3).zero?
+             'fizzbuzz'
+           elsif (int % 3).zero?
+             'fizz'
+           elsif (int % 5).zero?
+             'buzz'
+           else
+             int.to_s
+           end
   end
 end
