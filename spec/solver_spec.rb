@@ -28,5 +28,10 @@ describe Solver do
       fizzbuzz = @solver.fizzbuzz(15)
       expect(fizzbuzz).to eql 'fizzbuzz'
     end
+
+    it 'test should return fizz, buzz, fizzbuzz or number' do
+      fizzbuzz = @solver.fizzbuzz(10)
+      expect(fizzbuzz).to eql 'buzz'
+    end
   end
 end
