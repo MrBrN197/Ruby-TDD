@@ -5,8 +5,7 @@ describe Solver do
     @solver = Solver.new
   end
 
-  context 'test functionality of Solver methods' do
-
+  context 'testing factorial method' do
     it 'should return 1 for input 0' do
       result = @solver.factorial(0)
       expect(result).to eql 1
@@ -20,7 +19,9 @@ describe Solver do
       result = @solver.factorial(5)
       expect(result).to eql 120
     end
+  end
 
+  context 'test functionality of Solver methods' do
     it 'test that reverse method reverses a string' do
       word = 'hello'
       reversed_word = @solver.reverse(word)
