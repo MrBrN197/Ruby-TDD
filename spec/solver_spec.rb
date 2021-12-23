@@ -7,7 +7,7 @@ describe Solver do
 
   context 'test functionality of Solver methods' do
     it 'should throw when number argument is < 0' do
-      expect { @solver.factorial(-1) } .to raise_error('argument cannot be less than zero', ArgumentError)
+      expect { @solver.factorial(-1) }.to raise_error('argument cannot be less than zero', ArgumentError)
     end
 
     it 'test that factorial is calculated correctly' do

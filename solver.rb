@@ -1,6 +1,7 @@
 class Solver
   def factorial(num)
-    raise ArgumentError.new 'argument cannot be less than zero' if num < 0
+    raise ArgumentError, 'argument cannot be less than zero' if num.negative?
+
     sum = 1
     (1..num).each do |i|
       sum *= i
